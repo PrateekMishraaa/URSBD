@@ -26,82 +26,84 @@ const LandingPage = () => {
         <Navbar />
       </div>
 
-      <section className="h-[80vh] w-full">
-        <div className="h-[40vh] w-full border-2">
-          <img src={Steel2} alt="Iron" className="h-[60vh] w-[100%]" />
-        </div>
+      <section className="h-auto w-full">
+  <div className="h-[40vh] w-full border-2">
+    <img src={Steel2} alt="Iron" className="h-[60vh] w-full object-cover" />
+  </div>
 
-        <div className="h-20 w-[50%] mt-48 ml-[20%] bg-[#0b2c3d]">
-          <p className="ml-40 text-3xl py-3 text-white">
-            Buy Or Sell india with a Phone Call or AN Email
-          </p>
-         
-        </div>
-        
+  <div className="h-20 w-full md:w-[50%] mt-12 md:mt-48 mx-auto bg-[#0b2c3d]">
+    <p className="text-center text-2xl md:text-3xl py-3 text-white">
+      Buy Or Sell in India with a Phone Call or AN Email
+    </p>
+  </div>
 
-        <div className="h-28 w-[95%] ml-10 flex justify-between">
-          <div className="border-2 h-36 w-[30%] relative">
-            <p className="px-6  ml-16 font-semibold">
-              <img src={Live} alt="Live" className="absolute right-[90%]" />
-              Registered Agri Buyers
-            </p>
-            <p className="px-8 text-3xl font-bold absolute left-10 top-14">9,55,235</p>
-          </div>
-          <div className="border-2 h-36 w-[30%]">
-            <p className="px-2 w-[100%] ml-28 font-semibold relative">
-              <img src={Nego} alt="Nego" className="absolute right-[99%]" />
-              Registered Construction Buyers
-            </p>
-            <p className="px-8 text-3xl font-bold ml-20 mt-8">23,11,165</p>
-          </div>
-          <div className="border-2 h-36 w-[30%]">
-            <p className="font-semibold ml-14 relative">
-              <img src={Order} alt="Order" className="absolute right-[99%]" />
-              Registered
-             
-              Sellers
-            </p>
-            <p className="px-8 text-3xl font-bold ml-8 mt-8">80,18,335</p>
-          </div>
-        </div>
-      </section>
-
-      <section className="h-[100vh] w-full mt-20 flex flex-col items-center bg-[#0b2c3d]">
-        <h2 className="text-4xl font-bold text-center mt-8 mr-[60%] text-white">About Our Company</h2>
-        <div className="flex flex-wrap mt-8 w-[80%]">
-          <div className="w-full md:w-[50%] mb-4 md:mb-0">
-            <img
-              src={Building}
-              alt="About Us"
-              className="w-full h-auto object-cover rounded-lg shadow-lg"
-            />
-          </div>
-          <div className="w-full md:w-[50%] md:ml-8 text-white relative">
-            <p className="text-lg text-white mb-4">
-              We are a global leader in facilitating seamless trade between buyers and sellers across various industries. Our mission is to simplify transactions, ensuring safe and secure processes that eliminate the need for traditional communication methods like phone calls and emails.
-            </p>
-            <p className="text-lg text-white-700 mb-4">
-              With our platform, users can experience verified and trusted transactions while accessing a variety of services that enhance their trade experience. We value transparency, innovation, and customer satisfaction above all.
-            </p>
-            <ul className="mt-4">
-              <li className="text-lg text-white-600">- Comprehensive Global Marketplace</li>
-              <li className="text-lg text-white-600">- Advanced Verification Processes</li>
-              <li className="text-lg text-white-600">- Personalized Customer Support</li>
-              <li className="text-lg text-white-600">- Easy and Secure Payment Solutions</li>
-            </ul>
-          </div>
-          <div className="h-[100vh] w-[20%]">
-          <img src={Person} alt="" className="absolute  top-[99%] right-0"/>
-        </div>
-        </div>
-        
-      </section>
+  <div className="h-auto w-full px-4 flex flex-col md:flex-row justify-between mt-10">
+    <div className="border-2 h-36 w-full md:w-[30%] mb-4 md:mb-0 relative">
+      <p className="px-6 font-semibold">
+        <img src={Live} alt="Live" className="absolute right-4 top-4" />
+        Registered Agri Buyers
+      </p>
+      <p className="px-8 text-2xl md:text-3xl font-bold absolute left-10 top-14">9,55,235</p>
+    </div>
+    <div className="border-2 h-36 w-full md:w-[30%] mb-4 md:mb-0 relative">
+      <p className="px-2 font-semibold">
+        <img src={Nego} alt="Nego" className="absolute right-4 top-4" />
+        Registered Construction Buyers
+      </p>
+      <p className="px-8 text-2xl md:text-3xl font-bold ml-8 mt-8">23,11,165</p>
+    </div>
+    <div className="border-2 h-36 w-full md:w-[30%] relative">
+      <p className="font-semibold">
+        <img src={Order} alt="Order" className="absolute right-4 top-4" />
+        Registered Sellers
+      </p>
+      <p className="px-8 text-2xl md:text-3xl font-bold ml-8 mt-8">80,18,335</p>
+    </div>
+  </div>
+</section>
 
 
-      <section className="h-auto w-full mt-20 flex flex-col items-center bg-[#0b2c3d] py-10">
+      <section className="h-auto w-full mt-20 flex flex-col items-center bg-[#0b2c3d]">
+  <h2 className="text-4xl font-bold text-center mt-8 text-white">About Our Company</h2>
+  <div className="flex flex-col md:flex-row mt-8 w-full md:w-[80%]">
+    {/* Image Section */}
+    <div className="w-full md:w-1/2 mb-4 md:mb-0">
+      <img
+        src={Building}
+        alt="About Us"
+        className="w-full h-auto object-cover rounded-lg shadow-lg"
+      />
+    </div>
+
+    {/* Text Section */}
+    <div className="w-full md:w-1/2 md:ml-8 text-white">
+      <p className="text-lg text-white mb-4">
+        We are a global leader in facilitating seamless trade between buyers and sellers across various industries. Our mission is to simplify transactions, ensuring safe and secure processes that eliminate the need for traditional communication methods like phone calls and emails.
+      </p>
+      <p className="text-lg mb-4">
+        With our platform, users can experience verified and trusted transactions while accessing a variety of services that enhance their trade experience. We value transparency, innovation, and customer satisfaction above all.
+      </p>
+      <ul className="mt-4">
+        <li className="text-lg text-white">- Comprehensive Global Marketplace</li>
+        <li className="text-lg text-white">- Advanced Verification Processes</li>
+        <li className="text-lg text-white">- Personalized Customer Support</li>
+        <li className="text-lg text-white">- Easy and Secure Payment Solutions</li>
+      </ul>
+    </div>
+  </div>
+
+  {/* Additional Image Section (Person Image) */}
+  {/* <div className="relative w-full md:w-[20%] hidden md:block">
+    <img src={Person} alt="Person" className="absolute top-[80%] right-0 w-auto h-[300px]" />
+  </div> */}
+</section>
+
+
+
+<section className="h-auto w-full mt-20 flex flex-col items-center bg-[#0b2c3d] py-10">
   <h2 className="text-4xl font-bold mt-8 mb-10 text-white">Our Services</h2>
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-[90%]">
-    
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 w-[90%]">
+    {/* Service 1 */}
     <div className="flex flex-col items-center text-center bg-white p-4 rounded-lg shadow-lg">
       <img
         src={Bricks}
@@ -193,6 +195,7 @@ const LandingPage = () => {
     </div>
   </div>
 </section>
+
 
 
       
