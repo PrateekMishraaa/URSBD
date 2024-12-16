@@ -41,14 +41,14 @@ const Navbar = () => {
             </div>
 
             {/* Login Button */}
-            {!isMenuOpen && (
+            {/* {!isMenuOpen && (
               <div className="flex items-center justify-center md:block">
                 <Link className="text-xl flex items-center mt-4 md:mt-0" to="#login">
                   <FaRegUserCircle className="mr-2" />
                   Login
                 </Link>
               </div>
-            )}
+            )} */}
           </div>
         </nav>
       </div>

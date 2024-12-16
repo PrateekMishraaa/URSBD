@@ -8,17 +8,16 @@ import Building from "../assets/building.jpg";
 import Person from "../assets/person.png";
 import Bricks from "../assets/bricks.jpg";
 import Equipment from "../assets/equipment.jpg";
-import Quality from "../assets/quality.jpg";
-import Rice from "../assets/rice.jpg";
-import Pulses from "../assets/pulses.jpg";
-import Cotton from "../assets/cottonyarn-y.jpg"
+import Brickss from "../assets/brickss.jpg"
 import Banner from "../assets/banner.jpg"
 import App from "../assets/playstore.png";
 import Android from "../assets/android.jpg";
 import Steel2 from "../assets/steel2.jpg";
 import App2 from "../assets/android.jpg"
 import Footer from "../Components/Footer.jsx";
-
+import OIP from "../assets/OIP.jpg";
+import Services from "../assets/services.jpg"
+import OIPS from "../assets/OIPS.jpg"
 const LandingPage = () => {
   return (
     <>
@@ -100,7 +99,7 @@ const LandingPage = () => {
 
 
 
-<section className="h-auto w-full mt-20 flex flex-col items-center bg-[#0b2c3d] py-10">
+<section className="h-auto w-full mt-20 flex flex-col items-center bg-[#191246] py-10">
   <h2 className="text-4xl font-bold mt-8 mb-10 text-white">Our Services</h2>
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 w-[90%]">
     {/* Service 1 */}
@@ -120,10 +119,10 @@ const LandingPage = () => {
     <div className="flex flex-col items-center text-center bg-white p-4 rounded-lg shadow-lg">
       <img
         src={Equipment}
-        alt="Equipment Rental"
+        alt="Equipment Supply"
         className="h-32 w-32 mb-4 rounded-full border-4 border-gray-300"
       />
-      <h3 className="text-xl font-semibold mb-2 text-gray-800">Equipment Rental</h3>
+      <h3 className="text-xl font-semibold mb-2 text-gray-800">Equipment Supply</h3>
       <p className="text-gray-600">
         Rent the latest construction equipment, including cranes, excavators, and bulldozers, at competitive rates.
       </p>
@@ -136,14 +135,14 @@ const LandingPage = () => {
         alt="Project Management"
         className="h-32 w-32 mb-4 rounded-full border-4 border-gray-300"
       />
-      <h3 className="text-xl font-semibold mb-2 text-gray-800">Project Management</h3>
+      <h3 className="text-xl font-semibold mb-2 text-gray-800">Archtectural Design</h3>
       <p className="text-gray-600">
         Our experts offer comprehensive project management services to ensure timely and efficient project delivery.
       </p>
     </div>
 
     {/* Service 4 */}
-    <div className="flex flex-col items-center text-center bg-white p-4 rounded-lg shadow-lg">
+    {/* <div className="flex flex-col items-center text-center bg-white p-4 rounded-lg shadow-lg">
       <img
         src={Building}
         alt="Architectural Design"
@@ -153,10 +152,10 @@ const LandingPage = () => {
       <p className="text-gray-600">
         Work with our skilled architects to create modern and sustainable designs for residential and commercial buildings.
       </p>
-    </div>
+    </div> */}
 
     {/* Service 5 */}
-    <div className="flex flex-col items-center text-center bg-white p-4 rounded-lg shadow-lg">
+    {/* <div className="flex flex-col items-center text-center bg-white p-4 rounded-lg shadow-lg">
       <img
         src={Person}
         alt="Labor Supply"
@@ -166,10 +165,10 @@ const LandingPage = () => {
       <p className="text-gray-600">
         We connect you with skilled laborers, engineers, and supervisors for your construction projects.
       </p>
-    </div>
+    </div> */}
 
     {/* Service 6 */}
-    <div className="flex flex-col items-center text-center bg-white p-4 rounded-lg shadow-lg">
+    {/* <div className="flex flex-col items-center text-center bg-white p-4 rounded-lg shadow-lg">
       <img
         src={Iron}
         alt="Waste Management"
@@ -179,10 +178,10 @@ const LandingPage = () => {
       <p className="text-gray-600">
         Eco-friendly construction waste disposal services to maintain a clean and green environment.
       </p>
-    </div>
+    </div> */}
 
     {/* Service 7 */}
-    <div className="flex flex-col items-center text-center bg-white p-4 rounded-lg shadow-lg">
+    {/* <div className="flex flex-col items-center text-center bg-white p-4 rounded-lg shadow-lg">
       <img
         src={Quality}
         alt="Quality Assurance"
@@ -192,7 +191,7 @@ const LandingPage = () => {
       <p className="text-gray-600">
         Ensure your projects meet industry standards with our rigorous quality assurance processes.
       </p>
-    </div>
+    </div> */}
   </div>
 </section>
 
@@ -207,11 +206,11 @@ const LandingPage = () => {
     {/* Product 1 */}
     <div className="flex flex-col items-center text-center bg-white p-4 rounded-lg shadow-lg">
       <img
-        src={Rice}
+        src={OIP}
         alt="Iron"
         className="h-40 w-72 mb-4 rounded-lg border-4 border-gray-300 object-cover"
       />
-      <h3 className="text-xl font-semibold mb-2 text-gray-800">Rice</h3>
+      <h3 className="text-xl font-semibold mb-2 text-gray-800">TOOLS</h3>
       <button className="h-10 w-36  bg-[#191246] text-white border-2">View Details</button>
     </div>
 
@@ -229,33 +228,33 @@ const LandingPage = () => {
     {/* Product 3 */}
     <div className="flex flex-col items-center text-center bg-white p-4 rounded-lg shadow-lg">
     <img
-        src={Pulses}
+        src={OIPS}
         alt="Iron"
         className="h-40 w-72 mb-4 rounded-lg border-4 border-gray-300 object-cover"
       />
-      <h3 className="text-xl font-semibold mb-2 text-gray-800">Pulses</h3>
+      <h3 className="text-xl font-semibold mb-2 text-gray-800">Construction sites</h3>
       <button className="h-10 w-36  bg-[#191246] text-white border-2">View Details</button>
     </div>
 
     {/* Product 4 */}
     <div className="flex flex-col items-center text-center bg-white p-4 rounded-lg shadow-lg">
     <img
-        src={Cotton}
+        src={Brickss}
         alt="Iron"
         className="h-40 w-72 mb-4 rounded-lg border-4 border-gray-300 object-cover"
       />
-      <h3 className="text-xl font-semibold mb-2 text-gray-800">International Logistics / Yarn</h3>
+      <h3 className="text-xl font-semibold mb-2 text-gray-800">TOP-LEVEL-PRODUCTS</h3>
       <button className="h-10 w-36  bg-[#191246] text-white border-2">View Details</button>
     </div>
 
     {/* Product 5 */}
     <div className="flex flex-col items-center text-center bg-white p-4 rounded-lg shadow-lg">
     <img
-        src={Banner}
+        src={Services}
         alt="Iron"
         className="h-40 w-72 mb-4 rounded-lg border-4 border-gray-300 object-cover"
       />
-      <h3 className="text-xl font-semibold mb-2 text-gray-800">Other Products</h3>
+      <h3 className="text-xl font-semibold mb-2 text-gray-800">Our Services</h3>
       <button className="h-10 w-36  bg-[#191246] text-white border-2">View Details</button>
     </div>
   </div>
